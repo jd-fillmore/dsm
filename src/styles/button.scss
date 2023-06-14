@@ -1,0 +1,33 @@
+@import "../styles/breakpoints.scss";
+@import "../styles/variables.scss";
+
+.btn {
+  border: none;
+  border-radius: 0;
+  padding: 20px 30px 20px 30px;
+  font-size: 18px;
+  font-weight: bold;
+  @include bp-tablet-sm {
+    font-size: 16px;
+    padding: 16px;
+    width: 100%;
+  }
+}
+
+.btn-primary,
+.btn-secondary {
+  &:hover {
+    background-color: $baige;
+    border: 1px solid $baige;
+  }
+}
+
+.btn-primary {
+  background-color: $green;
+  border: 1px solid $green;
+}
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid $baige;
+}

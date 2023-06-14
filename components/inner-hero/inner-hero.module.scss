@@ -1,0 +1,34 @@
+@import "../../src/styles/breakpoints.scss";
+@import "../../src/styles/variables.scss";
+
+.inner-hero {
+  padding: 160px 0px 80px 0px;
+  background-image: linear-gradient(to left, rgba($green, 1), rgba($blue, 1));
+  margin-bottom: 80px;
+  @include bp-tablet-sm {
+    padding: 110px 0px 60px 0px;
+    margin-bottom: 40px;
+  }
+  .box {
+    padding: 50px;
+    border: 1px solid $baige;
+    @include bp-tablet-sm {
+      padding: 20px;
+    }
+    h1 {
+      color: $white;
+      font-weight: 500;
+      margin-bottom: 20px;
+      @include bp-tablet-sm {
+        margin-bottom: 0px;
+      }
+    }
+    .btn-secondary {
+      margin-left: 20px;
+      @include bp-tablet-sm {
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+    }
+  }
+}

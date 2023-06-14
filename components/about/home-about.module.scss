@@ -1,0 +1,20 @@
+@import "../../src/styles/breakpoints.scss";
+@import "../../src/styles/variables.scss";
+
+.home-about {
+  padding: 140px 0px 0px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 0px 0px;
+  }
+  hr {
+    margin: inherit;
+  }
+  p {
+    margin-top: 0px;
+  }
+  img {
+    @include bp-tablet-sm {
+      margin-bottom: 20px;
+    }
+  }
+}

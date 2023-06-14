@@ -1,0 +1,19 @@
+@import "/styles/breakpoints.scss";
+@import "/styles/variables.scss";
+
+.card {
+  padding: 40px;
+  border-radius: 0;
+  border: none;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.09), 0 6px 6px rgba(0, 0, 0, 0.13);
+  border-top: 3px solid $cyan;
+  @include bp-tablet-sm {
+    margin-top: 20px;
+  }
+  h4 {
+    text-align: center;
+  }
+  ul {
+    line-height: 2;
+  }
+}

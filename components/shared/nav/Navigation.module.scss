@@ -1,0 +1,21 @@
+@import "../../../src/styles/breakpoints.scss";
+@import "../../../src/styles/variables.scss";
+
+.nav {
+  a {
+    color: $blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    &:hover {
+      color: $green;
+    }
+  }
+  .fixed-top {
+    height: 80px;
+    background: rgba($white, 0.95) !important;
+    border-bottom: 1px solid rgba($black, 0.1);
+    @include bp-tablet-sm {
+      height: inherit;
+    }
+  }
+}

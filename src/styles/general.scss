@@ -1,0 +1,81 @@
+@import "../styles/breakpoints.scss";
+@import "../styles/variables.scss";
+
+form {
+  margin-top: 30px;
+  @include bp-tablet-sm {
+    margin-top: inherit;
+  }
+  input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 0;
+    border-width: 1px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+.p-t-40 {
+  padding-top: 40px;
+  @include bp-tablet-sm {
+    padding-top: 20px;
+  }
+}
+
+.p-t-80 {
+  padding-top: 80px;
+  @include bp-tablet-sm {
+    padding-top: 20px;
+  }
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(76,131,122, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+  border: none !important;
+}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+  border-radius: 0px !important;
+  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.dropdown-item {
+  line-height: 2;
+}
+
+img {
+  width: 100%;
+  @include bp-tablet-sm {
+    height: auto;
+  }
+}
+
+.inner-content {
+  padding: 60px 0px 60px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 40px 0px;
+  }
+  h2 {
+    margin-bottom: 0px;
+    @include bp-tablet-sm {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+hr {
+  width: 80px;
+  margin: 0 auto;
+  border-top: 1px solid $baige;
+  padding: 20px 0px 20px 0px;
+  @include bp-tablet-sm {
+    margin: inherit;
+    padding: 20px 0px 0px 0px;
+  }
+}

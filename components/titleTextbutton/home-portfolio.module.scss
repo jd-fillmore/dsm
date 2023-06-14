@@ -1,0 +1,36 @@
+@import "../../src/styles/breakpoints.scss";
+@import "../../src/styles/variables.scss";
+
+.homePortfolio {
+  padding: 120px 0px 0px 0px;
+  @include bp-tablet-sm {
+    padding: 40px 0px 50px 0px;
+  }
+  p {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    @include bp-tablet-sm {
+      width: 100%;
+      text-align: left;
+      padding-bottom: 20px;
+    }
+  }
+  h2 {
+    @include bp-tablet-sm {
+      text-align: left;
+    }
+  }
+  .btn {
+    margin-bottom: 50px;
+    @include bp-tablet-sm {
+      margin-bottom: 20px;
+    }
+  }
+  .picTwo {
+    @include bp-tablet-sm {
+      margin-top: 20px;
+    }
+  }
+}
